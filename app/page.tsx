@@ -8,9 +8,21 @@ import { notes, profile, projects, skillGroups, stats } from "@/data/portfolio";
 
 const HeroAtlas = dynamic(() => import("@/components/HeroAtlas"), { ssr: false });
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 22 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
+import { motion, type Variants } from "framer-motion";
+
+const fadeUp: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 24,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
 };
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
