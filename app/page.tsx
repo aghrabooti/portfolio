@@ -3,12 +3,10 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight, Github, Layers3, MoveUpRight, Radio, Terminal } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { notes, profile, projects, skillGroups, stats } from "@/data/portfolio";
 
 const HeroAtlas = dynamic(() => import("@/components/HeroAtlas"), { ssr: false });
-
-import { motion, type Variants } from "framer-motion";
 
 const fadeUp: Variants = {
   hidden: {
