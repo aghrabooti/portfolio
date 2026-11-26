@@ -102,3 +102,9 @@ test counts are in each repo's test suite (`tests/`), KooGYMaa's model count
 in `prisma/schema.prisma`, ParsiChin's audit figures in
 `docs/rtl-audit.md`, and commit counts in the GitHub contributors view.
 Demo URLs come from each repository's own “homepage” field on GitHub.
+
+## Homepage redesign
+
+The homepage includes a Three.js portrait, interactive project previews, and a skills gallery. Edit homepage data in `data/portfolio.ts`. Project case studies use `data/projects.ts`.
+
+The homepage design references [Hamish Williams](https://hamishw.com/). The NovaSweep background is by [Ernest Liu and DesignPass](https://designpass.dev/components/nova-sweep).
