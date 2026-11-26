@@ -52,9 +52,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
-        <Header />
+        <div className="legacy-chrome"><Header /></div>
         <main id="main">{children}</main>
-        <Footer />
+        <div className="legacy-chrome"><Footer /></div>
+        <Script src="/sakuga-vfx/button.js" strategy="afterInteractive" />
+        <Script src="/sakuga-vfx/toggle.js" strategy="afterInteractive" />
       </body>
     </html>
   );
